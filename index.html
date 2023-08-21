@@ -11,18 +11,6 @@
 		background-color: #000522;
 		</style>
 	</head>
-	<body>
-		<img src="images\112121.jpg" style="width: 500px" class="headimg" alt="uhh">
-		<h1 style="color:FFFFFF;" style="font-family: georgia" > This is nothing but my silly little website</h1>
-		<p style="color:FFFFFF;" style="font-family: georgia">I really got no clue why you are here...</p>
-		<nav>
-			<a type="button" class="btn btn-primary" href="./index.html">Home</a> 
-			<a type="button" class="btn btn-outline-secondary" href="./music1.html">Music</a>
-			<a type="button" class="btn btn-outline-secondary" href="./blog.html">Blog</a>
-			<a type="button" class="btn btn-outline-secondary" href="./socials.html">Links</a>
-		</nav>
-		<hr style="color:#000000;">
-	</body>
 	<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -30,20 +18,56 @@
   box-sizing: border-box;
 }
 
+.btn-warning {
+  float: right;
+  margin-top: 4px;
+  margin-right: 16px;
+  margin-left: 10px;
+  border: 4px solid #092f37;
+  border-radius: 20px;
+  background: #ff8000;
+  font-size: 26px;
+}
+
 body {
   font-family: georgia;
   font-size: medium;
-  padding: 100px;
-  background: #004f5d;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  background: #ffc000;
+}
+
+.title {
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  margin-top: 15px;
+  font-size: 20px;
+  min-height: 137px;
+  max-height: 137px;
+  text-align: left;
+  border: 5px solid #092f37;
+  border-radius: 50px;
+  background: #ff8000;
 }
 
 .header {
-  padding: 30px;
+  margin-top: 20px;
+  padding: 15px;
   font-size: 40px;
+  min-height: 137px;
+  max-height: 137px;
   text-align: center;
-  background: #a7dae5;
+  border: 5px solid #092f37;
+  border-radius: 50px;
+  background: #ff8000;
 }
-.leftcolumn {  
+
+.leftcolumn {
+  padding-left: 15px;
   float: left;
   width: 75%;
 }
@@ -51,24 +75,32 @@ body {
 .rightcolumn {
   float: left;
   width: 25%;
-  padding-left: 20px;
+  padding-left: 10px;
+  padding-right: 15px;
 }
 
 .fakeimg {
-  background-color: #14505d;
+  background-color: #9f5000;
   width: 100%;
-  padding: 3px;
+  border: 4px solid #000000;
+  border-radius: 20px;
 }
 
 .headimg {
   background-color: #0e333b;
   width: 100%;
-  padding: 3px;
+  height: 240px;
+  object-fit: fill;
+  border: 5px solid #000000;
+  border-radius: 20px;
 }
 
+
 .card {
-   background-color: #a7dae5;
+   background-color: #ff8000;
    padding: 20px;
+   border: 5px solid #092f37;
+   border-radius: 50px;
    margin-top: 20px;
 }
 
@@ -79,9 +111,50 @@ body {
 }
 
 .footer {
-  padding: 20px;
-  background: #a7dae5;
+  padding: 7px;
+  border: 4px solid #092f37;
+  border-radius: 50px;
+  background: #ff8000;
   margin-top: 20px;
+  max-height: 50px;
+}
+a {
+		color: #ffffff;
+}
+
+#socials {
+  text-align: center;
+  position: relative;
+  left: -5%;
+  font-size: 20px;
+}
+
+.linkb {
+  padding: 5px;
+  border: 3px solid #000000;
+  border-radius: 50px;
+  background: #ff8c1a;
+}
+
+.linkb:hover {
+  background-color: #ff9122;
+  border-color: #e67300;
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+
+#breakline {
+  border: 3px solid #ffffb3;
+  border-radius: 200px;
+}
+
+#navi {
+  margin-top: 15px;
+  border: 5px solid #092f37;
+  border-radius: 50px;
+  min-height: 137px;
+  max-height: 137px;
+  background: #f07800; 
 }
 
 @media screen and (max-width: 800px) {
@@ -94,8 +167,30 @@ body {
 </head>
 <body>
 
+<div style="color:#000000;" class="body">
+	
+	<img class="headimg" src="images\112121.jpg" alt="uhh">
+	
+	<div style="color:#ffffff;" class="title">
+		<h1 style="font-family: georgia;color:#000000;" > This is nothing but my silly little website</h1>
+		<p  style="font-family: georgia;color:#000000;">I really got no clue why you came here...</p>
+	</div>
+	<nav id="navi">
+		<a type="button" class="btn btn-warning" href="./socials.html">Links</a>
+		<a type="button" class="btn btn-warning" href="./blog.html">Blog</a>
+		<a type="button" class="btn btn-warning" href="./music1.html">Music</a>
+		<a type="button" class="btn btn-warning" href="./index.html">Home</a>
+	</nav>
+	<br>
+</div>
+
+<div id="breakline"> 
+</div>
+
 <div style="color:#000000;" class="header">
     <p><u>  Updates </u></p>
+	<h3> </h3>
+	<p></p>
 </div>
 
 <div class="row">
@@ -118,14 +213,11 @@ body {
 	  <img src="images\eye.jpg" style="width: 200px" class="fakeimg" alt="uhh">
 	  <hr>
       <p>Idk man... I am 24, going to college rn, trying to learn coding and music production in my freetime haha xD</p>
-	  <p>I also stream on <a href="https://www.twitch.tv/c33r1">Twitch</a> sometimes </p>
-	  <p>Also don't forget my <a href="https://soundcloud.com/mxllen">Soundcloud</a> page, kinda cringe, but fun.</p>
+	  <p>I also stream on <a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://www.twitch.tv/c33r1">Twitch</a> sometimes </p>
+	  <p>Also don't forget my <a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://soundcloud.com/mxllen">Soundcloud</a> page, kinda cringe, but fun.</p>
     </div>
   </div>
-</div>
-
-<div class="row">
-  <div style="color:#000000;" class="leftcolumn">
+    <div style="color:#ffffff;" class="leftcolumn">
     <div class="card">
       <h2><u>New Website</h2>
       <h5>Jan 14th 2023</u></h5> 
@@ -141,13 +233,17 @@ body {
   </div>
 </div>
 
+
+
+
+
 <div class="footer">
 		<p style="float:left;color:#000000;" style="width: 100px" >Mxllen©2023</p>
-		<p style="color:000000;" style="font-family: georgia" align="center" style="width: 200px">Links:  &nbsp
-			<a style="font-family: georgia"; href="https://soundcloud.com/mxllen">Soundcloud</a>  &nbsp
-			<a style="font-family: georgia"; href="https://www.youtube.com/channel/UCBb2XnH6odN2OLXHaHWxj_w">Youtube</a>  &nbsp
-			<a style="font-family: georgia"; href="https://www.twitch.tv/c33r1">Twitch</a>  &nbsp
-			<a style="font-family: georgia"; href="https://twitter.com/MullenReloaded">Twitter</a>
+		<p style="color:ffffff;" style="font-family: georgia" id="socials" style="width: 200px">
+			<a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://soundcloud.com/mxllen">Soundcloud</a>  &nbsp &nbsp
+			<a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://www.youtube.com/channel/UCBb2XnH6odN2OLXHaHWxj_w">Youtube</a>  &nbsp &nbsp
+			<a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://www.twitch.tv/c33r1">Twitch</a>  &nbsp &nbsp
+			<a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://twitter.com/MullenReloaded">Twitter</a>
 		</p>
 </div>
 

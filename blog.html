@@ -11,18 +11,6 @@
 		background-color: #000522;
 		</style>
 	</head>
-	<body>
-		<img src="images\112121.jpg" style="width: 500px" class="headimg" alt="uhh">
-		<h1 style="color:FFFFFF;" style="font-family: georgia" > This is nothing but my silly little website</h1>
-		<p style="color:FFFFFF;" style="font-family: georgia">I really got no clue why you are here...</p>
-		<nav>
-			<a type="button" class="btn btn-outline-secondary" href="./index.html">Home</a> 
-			<a type="button" class="btn btn-outline-secondary" href="./music1.html">Music</a>
-			<a type="button" class="btn btn-primary" href="./blog.html">Blog</a>
-			<a type="button" class="btn btn-outline-secondary" href="./socials.html">Links</a>
-		</nav>
-		<hr>
-	</body>
 	<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -30,21 +18,56 @@
   box-sizing: border-box;
 }
 
+.btn-warning {
+  float: right;
+  margin-top: 4px;
+  margin-right: 16px;
+  margin-left: 10px;
+  border: 4px solid #092f37;
+  border-radius: 20px;
+  background: #ff8000;
+  font-size: 26px;
+}
+
 body {
   font-family: georgia;
   font-size: medium;
-  padding: 100px;
-  background: #004f5d;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  background: #ffc000;
+}
+
+.title {
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  margin-top: 15px;
+  font-size: 20px;
+  min-height: 137px;
+  max-height: 137px;
+  text-align: left;
+  border: 5px solid #092f37;
+  border-radius: 50px;
+  background: #ff8000;
 }
 
 .header {
-  padding: 30px;
+  margin-top: 20px;
+  padding: 15px;
   font-size: 40px;
+  min-height: 137px;
+  max-height: 137px;
   text-align: center;
-  background: #a7dae5;
+  border: 5px solid #092f37;
+  border-radius: 50px;
+  background: #ff8000;
 }
 
-.leftcolumn {   
+.leftcolumn {
+  padding-left: 15px;
   float: left;
   width: 75%;
 }
@@ -52,24 +75,31 @@ body {
 .rightcolumn {
   float: left;
   width: 25%;
-  padding-left: 20px;
+  padding-left: 10px;
+  padding-right: 15px;
 }
 
 .fakeimg {
-  background-color: #14505d;
+  background-color: #9f5000;
   width: 100%;
-  padding: 3px;
+  border: 4px solid #000000;
+  border-radius: 20px;
 }
 
 .headimg {
   background-color: #0e333b;
   width: 100%;
-  padding: 3px;
+  height: 240px;
+  object-fit: fill;
+  border: 5px solid #000000;
+  border-radius: 20px;
 }
 
 .card {
-   background-color: #a7dae5;
+   background-color: #ff8000;
    padding: 20px;
+   border: 5px solid #092f37;
+   border-radius: 50px;
    margin-top: 20px;
 }
 
@@ -80,9 +110,50 @@ body {
 }
 
 .footer {
-  padding: 20px;
-  background: #3fc6e5;
+  padding: 7px;
+  border: 4px solid #092f37;
+  border-radius: 50px;
+  background: #ff8000;
   margin-top: 20px;
+  max-height: 50px;
+}
+a {
+		color: #ffffff;
+}
+
+#socials {
+  text-align: center;
+  position: relative;
+  left: -5%;
+  font-size: 20px;
+}
+
+.linkb {
+  padding: 5px;
+  border: 3px solid #000000;
+  border-radius: 50px;
+  background: #ff8c1a;
+}
+
+.linkb:hover {
+  background-color: #ff9122;
+  border-color: #e67300;
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+
+#breakline {
+  border: 3px solid #ffffb3;
+  border-radius: 200px;
+}
+
+#navi {
+  margin-top: 15px;
+  border: 5px solid #092f37;
+  border-radius: 50px;
+  min-height: 137px;
+  max-height: 137px;
+  background: #f07800; 
 }
 
 @media screen and (max-width: 800px) {
@@ -95,6 +166,25 @@ body {
 </head>
 <body>
 
+<div style="color:#000000;" class="body">
+	<img src="images\112121.jpg" class="headimg" alt="uhh">
+	
+	<div style="color:#ffffff;" class="title">
+		<h1 style="font-family: georgia;color:#000000;" > This is nothing but my silly little website</h1>
+		<p  style="font-family: georgia;color:#000000;">I really got no clue why you came here...</p>
+	</div>
+	<nav id="navi">
+		<a type="button" class="btn btn-warning" href="./socials.html">Links</a>
+		<a type="button" class="btn btn-warning" href="./blog.html">Blog</a>
+		<a type="button" class="btn btn-warning" href="./music1.html">Music</a>
+		<a type="button" class="btn btn-warning" href="./index.html">Home</a>
+	</nav>
+	<br>
+</div>
+
+<div id="breakline"> 
+</div>
+
 <div style="color:#000000;" class="header">
     <p> <u> My Blog </u> </p>
   <h3> I post here sometimes lol</h3>
@@ -106,10 +196,10 @@ body {
       <h2><u>Lazyness</h2>
       <h5>Mar 27th 2023</u></h5> 
 	  <div style="display: inline-block;">
-		 <img  src="images\Sematary.jpg" alt="Haunted Mound concert Berlin" class="fakeimg">
+		 <img  src="images\sematary.jpg" alt="Haunted Mound concert Berlin" class="fakeimg">
 	  <hr>
 	  <h4><u><b>Trying to suck less i guess</b></u></h4>
-	  <p>Alright how do i start?<br><br>I haven't really been updating this website for a while or really learning anything regarding coding, also i have been lazy in regards to music production, all of those things are fine i guess, but i really wish i had acted less lazy over these few months. I really want to make more music, but instead of doing stuff i just procrastinate and i am sure that can't be beneficial for me, especially considering that i have been acting lazy at college as well, only doing the least and not learning a lot, i get by and pass, but my grades should be above average if i really want to make the most out of this. I've set myself the goal to at least try to be a little less lazy, study school material, mess around with music and ocassionally figure out how to code, this is what i should be doing and i hopefully will, i don't want to complain on here about the same issues in a few months. Right after i managed to fix my lazyness i will try to develop a healthier diet perhaps or at least figure out how to manage my sleep better.<br><br>In other News, i went to a concert in Berlin, one of the best nights i probably have ever experienced! I took a train there for the Haunted Mound concert and well... I also ended up missing the last train that night, so i had to spend 6 hours in a McDonald's, but the mosh pit was so insane that night that it was totally worth it, my key chain also ended up ripping, but luckily i could easily replace the missing link.<br><br>I would really love to write more about that day but i still suck at properly blogging and writing interesting texts so i will keep it short for now, also it's close to 2AM and i should really sleep, at least i'm good at stalling and wasting time... hey it's something i guess!?</p>
+	  <p>Alright how do i start?<br><br>I haven't really been updating this website for a while or really learning anything regarding coding, also i have been lazy in regards to music production, all of those things are fine i guess, but i really wish i had acted less lazy over these few months. I really want to make more music, but instead of doing stuff i just procrastinate and i am sure that can't be beneficial for me, especially considering that i have been acting lazy at college as well, only doing the least and not learning a lot, i get by and pass, but my grades should be above average if i really want to make the most out of this. I've set myself the goal to at least try to be a little less lazy, study school material, mess around with music and ocassionally figure out how to code, this is what i should be doing and i hopefully will, i don't want to complain on here about the same issues in a few months. Right after i managed to fix my lazyness i will try to develop a healthier diet perhaps or at least figure out how to manage my sleep better.<br><br>In other News, i went to a concert in Berlin, one of the best nights i probably have ever experienced! I took a train there for the Haunted Mound concert and well... I ended up missing the last train that night, so i had to spend 6 hours in a McDonald's, but the mosh pit was so insane that night that it was totally worth it, my key chain also ended up ripping, but luckily i could easily replace the missing link.<br><br>I would really love to write more about that day but i still suck at blogging and writing interesting texts so i will keep it short for now, also it's close to 2AM and i should really sleep, at least i'm good at stalling and wasting time... hey it's something i guess!?</p>
       <p></p>
 	  </div>
     </div>
@@ -120,8 +210,8 @@ body {
 	  <img src="images\eye.jpg" style="width: 200px" class="fakeimg" alt="uhh">
 	  <hr>
       <p>Idk man... I am 24, going to college rn, trying to learn coding and music production in my freetime haha xD</p>
-	  <p>I also stream on <a href="https://www.twitch.tv/c33r1">Twitch</a> sometimes </p>
-	  <p>Also don't forget my <a href="https://soundcloud.com/mxllen">Soundcloud</a> page, kinda cringe, but fun.</p>
+	  <p>I also stream on <a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://www.twitch.tv/c33r1">Twitch</a> sometimes </p>
+	  <p>Also don't forget my <a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://soundcloud.com/mxllen">Soundcloud</a> page, kinda cringe, but fun.</p>
     </div>
   </div>
 </div>
@@ -145,10 +235,10 @@ body {
 <div class="footer">
 		<p  style="float:left;color:#000000;" style="width: 100px" style="color:#000000;" >Mxllen©2023</p>
 		<p style="color:#000000;" style="font-family: georgia" align="center" style="width: 200px">Links:  &nbsp
-			<a style="font-family: georgia"; href="https://soundcloud.com/mxllen">Soundcloud</a>  &nbsp
-			<a style="font-family: georgia"; href="https://www.youtube.com/channel/UCBb2XnH6odN2OLXHaHWxj_w">Youtube</a>  &nbsp
-			<a style="font-family: georgia"; href="https://www.twitch.tv/c33r1">Twitch</a>  &nbsp
-			<a style="font-family: georgia"; href="https://twitter.com/MullenReloaded">Twitter</a>
+			<a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://soundcloud.com/mxllen">Soundcloud</a>  &nbsp &nbsp
+			<a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://www.youtube.com/channel/UCBb2XnH6odN2OLXHaHWxj_w">Youtube</a>  &nbsp &nbsp
+			<a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://www.twitch.tv/c33r1">Twitch</a>  &nbsp &nbsp
+			<a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://twitter.com/MullenReloaded">Twitter</a>
 		</p>
 </div>
 
