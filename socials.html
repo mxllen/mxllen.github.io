@@ -23,7 +23,7 @@
   margin-top: 4px;
   margin-right: 16px;
   margin-left: 10px;
-  border: 4px solid #092f37;
+  border: 4px solid #000000;
   border-radius: 20px;
   background: #ff8000;
   font-size: 26px;
@@ -34,7 +34,7 @@
   margin-top: 4px;
   margin-right: 20px;
   margin-left: 10px;
-  border: 4px solid #092f37;
+  border: 4px solid #000000;
   border-radius: 20px;
   background: #ff8000;
   font-size: 15px;
@@ -48,7 +48,7 @@
 }
 
 body {
-  font-family: georgia;
+  font-family: Trebuchet MS;
   font-size: medium;
   padding-left: 90px;
   padding-right: 90px;
@@ -67,7 +67,7 @@ body {
   min-height: 137px;
   max-height: 137px;
   text-align: left;
-  border: 5px solid #092f37;
+  border: 5px solid #000000;
   border-radius: 50px;
   background: #ff8000;
 }
@@ -79,7 +79,7 @@ body {
   min-height: 137px;
   max-height: 137px;
   text-align: center;
-  border: 5px solid #092f37;
+  border: 5px solid #000000;
   border-radius: 50px;
   background: #ff8000;
 }
@@ -116,7 +116,7 @@ body {
 .card {
    background-color: #ff8000;
    padding: 20px;
-   border: 5px solid #092f37;
+   border: 5px solid #000000;
    border-radius: 50px;
    margin-top: 20px;
 }
@@ -129,7 +129,7 @@ body {
 
 .footer {
   padding: 7px;
-  border: 4px solid #092f37;
+  border: 4px solid #000000;
   border-radius: 50px;
   background: #ff8000;
   margin-top: 20px;
@@ -166,7 +166,7 @@ a {
 
 #navi {
   margin-top: 15px;
-  border: 5px solid #092f37;
+  border: 5px solid #000000;
   border-radius: 50px;
   min-height: 137px;
   max-height: 137px;
@@ -176,6 +176,30 @@ a {
   br {
     line-height: 14px;
  }
+
+.giff {
+  max-height:100%; max-width:100%;
+  border: 4px solid #000000;
+  border-radius: 20px;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+
+h2 {
+  font-weight: bold;
+}
+
+h3 {
+  color: #ffffff;
+}
+
+h5 {
+  font-weight: bold;
+}
+
 
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
@@ -191,8 +215,8 @@ a {
 	<img src="images\112121.jpg" class="headimg" alt="uhh">
 	
 	<div style="color:#ffffff;" class="title">
-		<h1 style="font-family: georgia;color:#000000;" > This is nothing but my silly little website</h1>
-		<p  style="font-family: georgia;color:#000000;">I really got no clue why you came here...</p>
+		<h1 style="font-family: Trebuchet MS;color:#000000;" > This is nothing but my silly little website</h1>
+		<p  style="font-family: Trebuchet MS;color:#ffffff;">I really got no clue why you came here...</p>
 	</div>
 	<nav id="navi">
 		<a type="button" class="btn btn-warning" href="./socials.html">Links</a>
@@ -208,7 +232,7 @@ a {
 </div>
 
 <div style="color:000000;" class="header">
-    <p><u>  All kinds of links </u></p>
+    <h1><u>  All kinds of links </u></h1>
   <h3> Just click whatever you want</h3>
 </div>
 
@@ -219,17 +243,17 @@ a {
       <h5>Last updated: Jan 25th 2023</u></h5> 
 	  <div style="display: inline-block;">
 		 <img  src="images\img2.jpg" alt="halfpipe" class="fakeimg"> <br>
-	  <hr>
+	  <hr id="breakline">
 	  	<ul>
-		<li><a style="font-family: georgia;color:#ff0000;" class="btn-warning2" href="https://soundcloud.com/mxllen">Soundcloud</a> </li>
+		<li><a style="font-family: Trebuchet MS;color:#ff0000;" class="btn-warning2" href="https://soundcloud.com/mxllen">Soundcloud</a> </li>
 		<br>
-		<li><a style="font-family: georgia;color:#ff0000;" class="btn-warning2" href="https://www.youtube.com/channel/UCBb2XnH6odN2OLXHaHWxj_w">Youtube</a></li>
+		<li><a style="font-family: Trebuchet MS;color:#ff0000;" class="btn-warning2" href="https://www.youtube.com/channel/UCBb2XnH6odN2OLXHaHWxj_w">Youtube</a></li>
 		<br>
-		<li><a style="font-family: georgia;color:#ff0000;" class="btn-warning2" href="https://www.twitch.tv/c33r1">Twitch</a></li>
+		<li><a style="font-family: Trebuchet MS;color:#ff0000;" class="btn-warning2" href="https://www.twitch.tv/c33r1">Twitch</a></li>
 		<br>
-		<li><a style="font-family: georgia;color:#ff0000;" class="btn-warning2" href="https://twitter.com/MullenReloaded">Twitter</a></li>
+		<li><a style="font-family: Trebuchet MS;color:#ff0000;" class="btn-warning2" href="https://twitter.com/MullenReloaded">Twitter</a></li>
 		</ul>
-		<hr>
+		<hr id="breakline">
 	  <h4><u><b>click the links above for more stuff</b></u></h4>
 	  <p>That's pretty much all here.</p>
       <p></p>
@@ -239,22 +263,26 @@ a {
   <div style="color:#000000;" class="rightcolumn">
     <div class="card">
       <h2><u>About Me</u></h2>
-	  <img src="images\eye.jpg" style="width: 200px" class="fakeimg" alt="uhh">
-	  <hr>
+	  <img src="images\eye.jpg" style="width: 100%" class="fakeimg" alt="uhh">
+	  <hr id="breakline">
       <p>Idk man... I am 24, going to college rn, trying to learn coding and music production in my freetime haha xD</p>
-	  <p>I also stream on <a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://www.twitch.tv/c33r1">Twitch</a> sometimes </p>
-	  <p>Also don't forget my <a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://soundcloud.com/mxllen">Soundcloud</a> page, kinda cringe, but fun.</p>
+	  <p>I also stream on <a style="font-family: Trebuchet MS;color:#ff0000;" class="linkb" href="https://www.twitch.tv/c33r1">Twitch</a> sometimes </p>
+	  <p style="line-height:26px;">Also don't forget my <a style="font-family: Trebuchet MS;color:#ff0000;" class="linkb" href="https://soundcloud.com/mxllen">Soundcloud</a> page, kinda cringe, but fun.</p>
     </div>
+	<div class="card">
+	<h2><u>Meow</u></h1>
+	<img class="giff" src="images/manul.gif">
+	</div>
   </div>
 </div>
 
 <div class="footer">
 		<p style="float:left;color:#000000;" style="width: 100px" >Mxllen©2023</p>
-		<p style="color:000000;" style="font-family: georgia" align="center" style="width: 200px">Links:  &nbsp
-			<a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://soundcloud.com/mxllen">Soundcloud</a>  &nbsp &nbsp
-			<a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://www.youtube.com/channel/UCBb2XnH6odN2OLXHaHWxj_w">Youtube</a>  &nbsp &nbsp
-			<a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://www.twitch.tv/c33r1">Twitch</a>  &nbsp &nbsp
-			<a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://twitter.com/MullenReloaded">Twitter</a>
+		<p style="color:000000;" style="font-family: Trebuchet MS" align="center" style="width: 200px">Links:  &nbsp
+			<a style="font-family: Trebuchet MS;color:#ff0000;" class="linkb" href="https://soundcloud.com/mxllen">Soundcloud</a>  &nbsp &nbsp
+			<a style="font-family: Trebuchet MS;color:#ff0000;" class="linkb" href="https://www.youtube.com/channel/UCBb2XnH6odN2OLXHaHWxj_w">Youtube</a>  &nbsp &nbsp
+			<a style="font-family: Trebuchet MS;color:#ff0000;" class="linkb" href="https://www.twitch.tv/c33r1">Twitch</a>  &nbsp &nbsp
+			<a style="font-family: Trebuchet MS;color:#ff0000;" class="linkb" href="https://twitter.com/MullenReloaded">Twitter</a>
 		</p>
 </div>
 

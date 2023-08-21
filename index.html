@@ -19,18 +19,19 @@
 }
 
 .btn-warning {
+  max-height:100%; max-width:100%;
   float: right;
   margin-top: 4px;
   margin-right: 16px;
   margin-left: 10px;
-  border: 4px solid #092f37;
+  border: 4px solid #000000;
   border-radius: 20px;
   background: #ff8000;
   font-size: 26px;
 }
 
 body {
-  font-family: georgia;
+  font-family: Trebuchet MS;
   font-size: medium;
   padding-left: 90px;
   padding-right: 90px;
@@ -49,7 +50,7 @@ body {
   min-height: 137px;
   max-height: 137px;
   text-align: left;
-  border: 5px solid #092f37;
+  border: 5px solid #000000;
   border-radius: 50px;
   background: #ff8000;
 }
@@ -61,7 +62,7 @@ body {
   min-height: 137px;
   max-height: 137px;
   text-align: center;
-  border: 5px solid #092f37;
+  border: 5px solid #000000;
   border-radius: 50px;
   background: #ff8000;
 }
@@ -99,7 +100,15 @@ body {
 .card {
    background-color: #ff8000;
    padding: 20px;
-   border: 5px solid #092f37;
+   border: 5px solid #000000;
+   border-radius: 50px;
+   margin-top: 20px;
+}
+
+.card {
+   background-color: #ff8000;
+   padding: 20px;
+   border: 5px solid #000000;
    border-radius: 50px;
    margin-top: 20px;
 }
@@ -112,7 +121,7 @@ body {
 
 .footer {
   padding: 7px;
-  border: 4px solid #092f37;
+  border: 4px solid #000000;
   border-radius: 50px;
   background: #ff8000;
   margin-top: 20px;
@@ -150,11 +159,30 @@ a {
 
 #navi {
   margin-top: 15px;
-  border: 5px solid #092f37;
+  border: 5px solid #000000;
   border-radius: 50px;
   min-height: 137px;
   max-height: 137px;
   background: #f07800; 
+}
+
+.giff {
+  max-height:100%; max-width:100%;
+  border: 4px solid #000000;
+  border-radius: 20px;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+
+h2 {
+  font-weight: bold;
+}
+
+h5 {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 800px) {
@@ -172,8 +200,8 @@ a {
 	<img class="headimg" src="images\112121.jpg" alt="uhh">
 	
 	<div style="color:#ffffff;" class="title">
-		<h1 style="font-family: georgia;color:#000000;" > This is nothing but my silly little website</h1>
-		<p  style="font-family: georgia;color:#000000;">I really got no clue why you came here...</p>
+		<h1 style="font-family: Trebuchet MS;color:#000000;" > This is nothing but my silly little website</h1>
+		<p  style="font-family: Trebuchet MS;color:#ffffff;">I really got no clue why you came here...</p>
 	</div>
 	<nav id="navi">
 		<a type="button" class="btn btn-warning" href="./socials.html">Links</a>
@@ -188,7 +216,7 @@ a {
 </div>
 
 <div style="color:#000000;" class="header">
-    <p><u>  Updates </u></p>
+    <h1><u>  Updates </u></h1>
 	<h3> </h3>
 	<p></p>
 </div>
@@ -196,40 +224,53 @@ a {
 <div class="row">
   <div style="color:#000000;" class="leftcolumn">
     <div class="card">
+      <h2><u>Total overhaul</h2>
+      <h5>Aug 21st 2023</u></h5> 
+	  <div style="display: inline-block;">
+		 <img  src="images\img7.jpg" style="width: 100%;" alt="energy" class="fakeimg">
+	  <hr id="breakline">
+	  <h4><u><b>New website design</b></u></h4>
+	  <p>It has been ages since I updated this website but I have finally managed to figure out how CSS works, at least partially, now it looks pretty nice! I still got some stuff to work on though, it's not fully done yet.</p>
+	  </div>
+    </div>
+	<div class="card">
       <h2><u>New embeds</h2>
       <h5>Jan 25th 2023</u></h5> 
 	  <div style="display: inline-block;">
-		 <img  src="images\img6.jpg" style="width: 500px;" alt="energy" class="fakeimg">
-	  <hr>
+		 <img  src="images\img6.jpg" style="width: 100%;" alt="energy" class="fakeimg">
+	  <hr id="breakline">
 	  <h4><u><b>Soundcloud embeds</b></u></h4>
-	  <p>Managed to add some embeds to my Soundcloud tracks, also added a small pagination bar at the bottom of the music page with custom colors. Guess that wasn't too hard to figure out, but the Bootstrap stuff still took a while until i kinda figured it out. (¬_¬)</p>
-	  <hr>
+	  <p>Managed to add some embeds to my Soundcloud tracks, also added a small pagination bar at the bottom of the music page with custom colors. Guess that wasn't too hard to figure out, but the Bootstrap stuff still took a while until i kinda figured it out.</p>
+	  </div>
+    </div>
+	<div class="card">
+      <h2><u>New Website</h2>
+      <h5>Jan 14th 2023</u></h5> 
+	  <div style="display: inline-block;">
+		 <img  src="images\img1.jpg" style="width: 100%;" alt="energy" class="fakeimg">
+	  <hr id="breakline">
+	  <h4><u><b>The beginning</b></u></h4>
+	  <p>So i guess this is the start of me trying to learn how to code or something lol, well it is what it is. I know for now this website is not much and it's not done very well, but let's see how things develop, for now i will stick to HTML and CSS!</p>
+	  <p></p>
 	  </div>
     </div>
   </div>
     <div style="color:#000000;" class="rightcolumn">
     <div class="card">
       <h2><u>About Me</u></h2>
-	  <img src="images\eye.jpg" style="width: 200px" class="fakeimg" alt="uhh">
-	  <hr>
+	  <img src="images\eye.jpg" style="width: 100%;" class="fakeimg" alt="uhh">
+	  <hr id="breakline">
       <p>Idk man... I am 24, going to college rn, trying to learn coding and music production in my freetime haha xD</p>
-	  <p>I also stream on <a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://www.twitch.tv/c33r1">Twitch</a> sometimes </p>
-	  <p>Also don't forget my <a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://soundcloud.com/mxllen">Soundcloud</a> page, kinda cringe, but fun.</p>
+	  <p>I also stream on <a style="font-family: Trebuchet MS;color:#ff0000;" class="linkb" href="https://www.twitch.tv/c33r1">Twitch</a> sometimes </p>
+	  <p style="line-height:26px;">Also don't forget my <a style="font-family: Trebuchet MS;color:#ff0000;" class="linkb" href="https://soundcloud.com/mxllen">Soundcloud</a> page, kinda cringe, but fun.</p>
     </div>
+	<div class="card">
+	<h2><u>Meow</u></h1>
+	<img class="giff" src="images/manul.gif">
+	</div>
   </div>
-    <div style="color:#000000);" class="leftcolumn">
-    <div class="card">
-      <h2><u>New Website</h2>
-      <h5>Jan 14th 2023</u></h5> 
-	  <div style="display: inline-block;">
-		 <img  src="images\img1.jpg" style="width: 600px;" alt="energy" class="fakeimg">
-	  <hr>
-	  <h4><u><b>The beginning</b></u></h4>
-	  <p>So i guess this is the start of me trying to learn how to code or something lol, well it is what it is. I know for now this website is not much and it's not done very well, but let's see how things develop, for now i will stick to HTML and CSS!</p>
-      <hr>
-	  <p></p>
-	  </div>
-    </div>
+    <div style="color:#000000;" class="leftcolumn">
+
   </div>
 </div>
 
@@ -239,11 +280,11 @@ a {
 
 <div class="footer">
 		<p style="float:left;color:#000000;" style="width: 100px" >Mxllen©2023</p>
-		<p style="color:ffffff;" style="font-family: georgia" id="socials" style="width: 200px">
-			<a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://soundcloud.com/mxllen">Soundcloud</a>  &nbsp &nbsp
-			<a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://www.youtube.com/channel/UCBb2XnH6odN2OLXHaHWxj_w">Youtube</a>  &nbsp &nbsp
-			<a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://www.twitch.tv/c33r1">Twitch</a>  &nbsp &nbsp
-			<a style="font-family: georgia;color:#ff0000;" class="linkb" href="https://twitter.com/MullenReloaded">Twitter</a>
+		<p style="color:ffffff;" style="font-family: Trebuchet MS" id="socials" style="width: 200px">
+			<a style="font-family: Trebuchet MS;color:#ff0000;" class="linkb" href="https://soundcloud.com/mxllen">Soundcloud</a>  &nbsp &nbsp
+			<a style="font-family: Trebuchet MS;color:#ff0000;" class="linkb" href="https://www.youtube.com/channel/UCBb2XnH6odN2OLXHaHWxj_w">Youtube</a>  &nbsp &nbsp
+			<a style="font-family: Trebuchet MS;color:#ff0000;" class="linkb" href="https://www.twitch.tv/c33r1">Twitch</a>  &nbsp &nbsp
+			<a style="font-family: Trebuchet MS;color:#ff0000;" class="linkb" href="https://twitter.com/MullenReloaded">Twitter</a>
 		</p>
 </div>
 
