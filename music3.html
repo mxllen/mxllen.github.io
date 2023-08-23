@@ -140,7 +140,25 @@ a {
   border-color: #e67300;
   box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
 }
+.paginator {
+  padding: 5px;
+  border: 3px solid #000000;
+  border-radius: 100px;
+  background: #c36b13;
+}
 
+.paginator_active {
+  padding: 5px;
+  border: 3px solid #000000;
+  border-radius: 100px;
+  background: #ff8c1a;
+}
+
+.paginator:hover {
+  background-color: #ff9122;
+  border-color: #e67300;
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
 
 #breakline {
   border: 3px solid #ffffb3;
@@ -187,10 +205,26 @@ h5 {
   font-weight: bold;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1171px) {
+  .body {
+   padding-left: 0px;
+   padding-right: 0px;
+  }
   .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
+   width: 100%;
+   padding: 0px;
+  }
+  .title, .header, .navi, .footer {
+   min-height: 137px;
+   max-height: 800px;
+  }
+  .linkb {
+   margin-top: 40px;
+   margin-bottom: 40px;
+  }
+  #breakline {
+  margin-top: 30px;
+  margin-bottom: 10px;
   }
 }
 </style>
@@ -244,17 +278,11 @@ h5 {
 
 <nav aria-label="...">
 	<ul class="pagination">
-		<li class="page-item">
-			<a class="page-link" href="./music1.html">First</a>
-		</li>
-		<li class="page-item" aria-current="page">
-			<a class="page-link" href="./music1.html">1</a>
-		</li>
-		<li class="page-item"><a class="page-link" href="./music2.html">2</a></li>
-		<li class="page-item active"><a class="page-link" href="./music3.html">3</a></li>
-		<li class="page-item">
-			<a class="page-link" href="./music3.html">Last</a>
-		</li>
+		<a type="button" style="float: left;"  class="paginator" href="./music1.html">First</a>
+		<a type="button" style="float: left;"  class="paginator" href="./music1.html">1</a>
+		<a type="button" style="float: left;"  class="paginator" href="./music2.html">2</a>
+		<a type="button" style="float: left;"  class="paginator_active" href="./music3.html">3</a>
+		<a type="button" style="float: left;"  class="paginator_active" href="./music3.html">Last</a>
 	</ul>
 </nav>
 
