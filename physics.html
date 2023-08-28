@@ -12,20 +12,19 @@
 	</head>
 	<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style> 
-
+<style>
 </style>
 </head>
-<body>
+<body onload="dataScreenFallCalculator()">
+
 <div style="color:#000000;" class="body">
-	
-	<img class="headimg" src="images\112121.jpg" alt="uhh">
+	<img src="images\112121.jpg" class="headimg" alt="uhh">
 	
 	<div style="color:#ffffff;" class="title">
 		<h6 style="font-family: Trebuchet MS;color:#000000;" > This is nothing but my silly little website</h1>
 		<p  style="font-family: Trebuchet MS;color:#ffffff;">I've got no idea why you came here...</p>
 	</div>
-		<nav id="navi">
+	<nav id="navi">
 		<a type="button" class="btn btn-warning" href="./physics.html">Projects</a>
 		<a type="button" class="btn btn-warning" href="./socials.html">Info</a>
 		<a type="button" class="btn btn-warning" href="./blog.html">Blog</a>
@@ -39,46 +38,38 @@
 </div>
 
 <div style="color:#000000;" class="header">
-    <h1><u>  Updates </u></h1>
-	<h3> </h3>
-	<p></p>
+    <h1><u> Projects </u></h1>
+  <h3> I will post smaller projects I have been working on here</h3>
 </div>
 
 <div class="row">
   <div style="color:#000000;" id="leftColumn" class="leftcolumn">
-    <div class="card">
-      <h2><u>Total overhaul</h2>
-      <h5>Aug 21st 2023</u></h5> 
+    <div class="card" style="width: 100%" id="cardFall">
+      <h2><u>Free fall and impact force calculator</h2>
+      <h5>Aug 28th 2023</u></h5>
 	  <div style="display: inline-block;">
-		 <img  src="images\img7.jpg" alt="energy"  class="fakeimg">
-	  <hr class="breakline">
-	  <h4><u><b>New website design</b></u></h4>
-	  <p>It has been ages since I updated this website but I have finally managed to figure out how CSS works, at least partially, now it looks pretty nice! I still got some stuff to work on though, it's not fully done yet.</p>
+		 <img  src="" alt="Image coming soon" class="fakeimg">
+	  <hr class="breakline" id="brFall">
+	  <div style="width: 600px">
+	  <h4><u><b>Put your data here:</b></u></h4>
+	  <p style="text-align: left;" font="width: 100px;">This simple calculator will give you the max speed of a falling object, the total amount of time it will take for the object to fall from a giving height and the total amount of energy at impact.</p>
+	  <label for="fallHeight">height:</label>
+	  <input type="text" id="fallHeight" name="fallHeight" placeholder="height in meters"></input>
+	  <br>
+	  <label for="weight">weight:</label>
+	  <input type="text" id="weight" name="weight" placeholder="weight in kg"></input>
+	  <button onclick="fallCalculation()">Calculate</button>
 	  </div>
-    </div>
-	<div class="card">
-      <h2><u>New embeds</h2>
-      <h5>Jan 25th 2023</u></h5> 
-	  <div style="display: inline-block;">
-		 <img  src="images\img6.jpg" alt="energy" class="fakeimg">
-	  <hr class="breakline">
-	  <h4><u><b>Soundcloud embeds</b></u></h4>
-	  <p>Managed to add some embeds to my Soundcloud tracks, also added a small pagination bar at the bottom of the music page with custom colors. Guess that wasn't too hard to figure out, but the Bootstrap stuff still took a while until I kinda figured it out.</p>
+	  <div>
+	  <br>
+	  <p id="fallCalculationSpeed"></p>
+	  <p id="fallCalculationTime"></p>
+	  <p id="fallCalculationEnergy"></p>
 	  </div>
-    </div>
-	<div class="card">
-      <h2><u>New Website</h2>
-      <h5>Jan 14th 2023</u></h5> 
-	  <div style="display: inline-block;">
-		 <img  src="images\img1.jpg" alt="energy" class="fakeimg">
-	  <hr class="breakline">
-	  <h4><u><b>The beginning</b></u></h4>
-	  <p>So I guess this is the start of me trying to learn how to code or something lol, well it is what it is. I know for now this website is not much and it's not done very well, but let's see how things develop, for now I will stick to HTML and CSS!</p>
-	  <p></p>
 	  </div>
     </div>
   </div>
-    <div style="color:#000000;" id="rightColumn" class="rightcolumn">
+  <div style="color:#000000;" id="rightColumn" class="rightcolumn">
     <div class="card">
       <h2><u>About Me</u></h2>
 	  <img src="images\eye.jpg" style="width: 100%;" class="headimg2" alt="uhh">
@@ -94,13 +85,9 @@
   </div>
 </div>
 
-<script src="columns.js"></script>
-<script src="resize.js"></script>
-
-
 <div class="footer">
-		<p style="float:left;color:#000000;" style="width: 100px" >Mxllen©2023</p>
-		<p style="color:ffffff;" style="font-family: Trebuchet MS" id="socials" style="width: 200px">
+		<p  style="float:left;color:#000000;" style="width: 100px" style="color:#000000;" >Mxllen©2023</p>
+		<p style="color:#000000;" style="font-family: Trebuchet MS" align="center" style="width: 200px">Links:  &nbsp
 			<a style="font-family: Trebuchet MS;color:#ff0000;" class="linkb" href="https://soundcloud.com/mxllen">Soundcloud</a>  &nbsp &nbsp
 			<a style="font-family: Trebuchet MS;color:#ff0000;" class="linkb" href="https://www.youtube.com/channel/UCBb2XnH6odN2OLXHaHWxj_w">Youtube</a>  &nbsp &nbsp
 			<a style="font-family: Trebuchet MS;color:#ff0000;" class="linkb" href="https://www.twitch.tv/c33r1">Twitch</a>  &nbsp &nbsp
@@ -108,6 +95,10 @@
 		</p>
 </div>
 
+
+<script src="physics.js"></script>
+<script src="columns.js"></script>
+<script src="resize.js"></script>
 
 </body>
 </html>
