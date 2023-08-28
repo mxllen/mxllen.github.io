@@ -18,7 +18,7 @@
 <body onload="dataScreenFallCalculator()">
 
 <div style="color:#000000;" class="body">
-	<img src="images\112121.jpg" class="headimg" alt="uhh">
+	<img class="headimg" onmouseover="headerGif(this)" onmouseleave="headerUnGif(this)" src="images\112121.jpg" id="headimgsrc" alt="uhh">
 	
 	<div style="color:#ffffff;" class="title">
 		<h6 style="font-family: Trebuchet MS;color:#000000;" > This is nothing but my silly little website</h1>
@@ -52,7 +52,7 @@
 	  <hr class="breakline" id="brFall">
 	  <div style="width: 600px">
 	  <h4><u><b>Put your data here:</b></u></h4>
-	  <p style="text-align: left;" font="width: 100px;">This simple calculator will give you the max speed of a falling object, the total amount of time it will take for the object to fall from a giving height and the total amount of energy at impact.</p>
+	  <p style="text-align: left;" font="width: 100px;">This simple calculator will give you the max speed of a falling object, the total amount of time it will take for the object to fall from a given height and the total amount of energy at impact.</p>
 	  <label for="fallHeight">height:</label>
 	  <input type="text" id="fallHeight" name="fallHeight" placeholder="height in meters"></input>
 	  <br>
@@ -99,6 +99,7 @@
 <script src="physics.js"></script>
 <script src="columns.js"></script>
 <script src="resize.js"></script>
+<script src="resize.js" defer></script>
 
 </body>
 </html>

@@ -1,10 +1,29 @@
-let imgSize = document.getElementsByClassName("fakeimg");
-let enlarged = false;
+let imgSize = document.getElementsByClassName("fakeimg"),
+titleGif = document.getElementsByClassName("headimg"),
+enlarged = false;
+
+let noResizeSwitch = false
+
+let im = new Image();
+im.src = 'images\0023.gif';
 
 console.log(imgSize);
 
 //imgResize.onmouseover = hover;
 //imgResize.onmouseout = preview;
+
+function headerGif() {
+document.getElementById("headimgsrc").src = "images\\0023.gif";
+}
+
+function headerUnGif() {
+document.getElementById("headimgsrc").src = "images\\112121.jpg";
+console.log('boop');
+}
+
+function noResize () {
+	noResizeSwitch = true;
+}
 
 function hover() {
     if (enlarged === false) {
@@ -26,6 +45,7 @@ function preview() {
     }
 }
 
+if (noResizeSwitch === false) {
 for (const smallImage of imgSize) {
     console.log('test');
     /*	smallImage.onmouseover = () => {
@@ -44,6 +64,7 @@ for (const smallImage of imgSize) {
             enlarged = true;
         }
     }
+}
 }
 
 /*
