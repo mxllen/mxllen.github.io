@@ -1,12 +1,8 @@
-let A = - 1 / 3;
-let B = 3;
-
-A = A * 3;
-B = B * 3;
+let A = 1, B = 5, C = 1;
 
 function PQ() {
-	let zeros1 = (-B / 2) + Math.sqrt((B / 2) ^ 2);
-	let zeros2 = (-B / 2) - Math.sqrt((B / 2) ^ 2);
+	let zeros1 = -B / 2 + Math.sqrt((2 / 2) ^ 2 - C);
+	let zeros2 = -B / 2 - Math.sqrt((B / 2) ^ 2 - C);
 	console.log(zeros1, zeros2);
 }
 
