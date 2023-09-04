@@ -1,8 +1,8 @@
 {
 "gladius":[
-	"meaning": ["sword", "death (by sword)", "penis (colloquial)", "swordfish"],
-	"singular": ["gladius", "gladii", "gladio", "gladium", "gladio"],
-	"plural": ["gladii", "gladiorum", "gladiis", "gladios", "gladiis"],
-	"gender": "masculine"
+	{"meaning": ["sword", "death (by sword)", "penis (colloquial)", "swordfish"],}
+	{"singular": ["gladius", "gladii", "gladio", "gladium", "gladio"],}
+	{"plural": ["gladii", "gladiorum", "gladiis", "gladios", "gladiis"],}
+	{"gender": "masculine"}
 ]
 }
