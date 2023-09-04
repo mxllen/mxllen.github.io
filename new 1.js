@@ -73,20 +73,3 @@ let saeculum = {
 	gender: 'neuter'
 	
 };  
-
-/*
-fetch('LatinNounsUs.json')
-	.then(response => response.json())
-	.then(LatinNounsUs => showInfo(LatinNounsUs));
-	
-function showInfo(LatinNounsUs) {
-	console.table(LatinNounsUs.gladius);
-}  */ 
-
-fetch('LatinNounsUs.json')
-	.then(response => response.json())
-	.then(data => showInfo(data));
-	
-function showInfo(data) {
-	console.table(data.gladius);
-}
