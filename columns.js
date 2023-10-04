@@ -5,6 +5,7 @@ brLineAdjustHr = document.getElementById("brFall")
 columnHeightLeft.style.height = columnHeightRight.offsetHeight;
 brLineAdjustHr.style.width = brLineAdjustCard.offsetWidth - 60;
 
+window.onload = alignColumns;
 window.onresize = alignColumns;
 
 function webLoad() {
